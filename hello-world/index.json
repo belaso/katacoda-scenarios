@@ -1,26 +1,28 @@
 {
-  "title": "Hello World Scenario",
-  "description": "Your First Scenario",
-  "difficulty": "Beginner",
-  "time": "2 minutes",
-  "details": {
-    "steps": [{
-      "title": "Schritt 1 - Kubernetes starten",
-      "text": "step1.md"
-    }],
-    "intro": {
-      "text": "intro.md",
-      "credits": ""
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
-  "environment": {
-    "uilayout": "terminal",
-    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
-  },
-  "backend": {
-    "imageid": "minikube"
-  }
+	"title": "RAM Speicher für deine Pods ...",
+	"description": "Diese Lektion zeigt dir, wie du RAM Speicher einem Container zuweisen kannst.",
+	"difficulty": "Beginner",
+	"time": "10 Minuten",
+	"details": {
+		"steps": [
+			{
+				"title": "Schritt 1 - Kubernetes starten",
+				"text": "step1.md"
+			}
+		],
+		"intro": {
+			"text": "intro.md",
+			"credits": ""
+		},
+		"finish": {
+			"text": "finish.md"
+		}
+	},
+	"environment": {
+		"uilayout": "terminal",
+		"uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
+	},
+	"backend": {
+		"imageid": "minikube"
+	}
 }
