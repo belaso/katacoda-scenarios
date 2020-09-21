@@ -1,7 +1,7 @@
-This is your first step.
+Kubernetes starten ...
 
-## Task
+## Kubernetes / Minikube starten
 
-This is an _example_ of creating a scenario and running a **command**
-
-`echo 'Hello World'`{{execute}}
+Überprüfe mit `minikube version`{{execute}} die verwendete Minikube Version
+und starte mit `minikube start`{{execute}} einen Kubernetes Cluster mit einem
+Node.
