@@ -1,11 +1,11 @@
 {
   "title": "Hello World Scenario",
   "description": "Your First Scenario",
-  "difficulty": "beginner",
+  "difficulty": "Beginner",
   "time": "2 minutes",
   "details": {
     "steps": [{
-      "title": "Step 1 - Run Command",
+      "title": "Schritt 1 - Kubernetes starten",
       "text": "step1.md"
     }],
     "intro": {

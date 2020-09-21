@@ -1,7 +1,13 @@
-Kubernetes starten ...
+Überprüfe mit `minikube version`{{execute}} die Minikube Version. (_Dieser Schritt ist optional_)
 
-## Kubernetes / Minikube starten
+Starte mit `minikube start`{{execute}} den Minikube Kubernetes Cluster.
+Bitte beachte, dass es eine Weile dauert, bis dieser Cluster hochgefahren ist.
 
-Überprüfe mit `minikube version`{{execute}} die verwendete Minikube Version
-und starte mit `minikube start`{{execute}} einen Kubernetes Cluster mit einem
-Node.
+Mit `minikube status` überprüfst du den Status des Clusters. Wenn er erfolgreich hochgefahren ist,
+liefert dieser Befehl:
+```
+host: Running
+kubelet: Running
+apiserver: Running
+kubeconfig: Running
+```
