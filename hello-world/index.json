@@ -12,6 +12,10 @@
 			{
 				"title": "Pod deployen",
 				"text": "step2.md"
+			},
+			{
+				"title": "Speicherverbrauch untersuchen",
+				"text": "step3.md"
 			}
 		],
 		"intro": {

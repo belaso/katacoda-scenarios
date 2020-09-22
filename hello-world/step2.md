@@ -22,4 +22,5 @@ läuft. Der `STATUS` des Pods ist dann `Running`.
 
 Innerhalb des Pods wurde der Docker Container https://hub.docker.com/r/polinux/stress 
 gestartet. Beim Starten des Containers wird der `stress` Befehl ausgeführt, 
-der 150MB Speicher anfordert.
+der 150 MB Speicher anfordert. Also mehr als der initiale Request von 100 MB 
+aber weniger als das Limit von 200 MB.
