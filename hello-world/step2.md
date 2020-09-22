@@ -15,4 +15,7 @@ Die obigen Einträge bedeuten:
 - maximal 200 MB RAM darf der Container anfordern und
 - 100 MB RAM ist für den normalen Betrieb notwendig
 
-Deploye  den Pod nun mit dem Befehl `kubectl -f memory-demo-pod`{{execute}}.
+Deploye  den Pod nun mit dem Befehl `kubectl apply -f memory-demo-pod`{{execute}}.
+
+Mit `kubectl get pod memory-demo-pod` kannst du überprüfen, ob dein Pod
+läuft. Der `STATUS` des Pods ist dann `Running`.
