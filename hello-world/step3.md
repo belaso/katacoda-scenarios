@@ -19,8 +19,7 @@ Error from server (NotFound): podmetrics.metrics.k8s.io "default/memory-demo-pod
 ```
 als Fehlermeldung. In diesem Fall führe den obigen `top` Befehl einfach erneut aus.
 
-Nachdem die Metrics des `memory-demo-pod` überwacht werden können, liefert der obige
-`top` Befehl folgende Ausgabe
+Nachdem der Metrics Server läuft, liefert der obige `top` Befehl folgende Ausgabe
 ```
 NAME              CPU(cores)   MEMORY(bytes)
 memory-demo-pod   64m          150Mi  
