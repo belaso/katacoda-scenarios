@@ -16,6 +16,10 @@
 			{
 				"title": "Speicherverbrauch untersuchen",
 				"text": "step3.md"
+			},
+			{
+				"title": "Out of Memory",
+				"text": "step4.md"
 			}
 		],
 		"intro": {

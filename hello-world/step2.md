@@ -24,3 +24,6 @@ Innerhalb des Pods wurde der Docker Container https://hub.docker.com/r/polinux/s
 gestartet. Beim Starten des Containers wird der `stress` Befehl ausgeführt, 
 der 150 MB Speicher anfordert. Also mehr als der initiale Request von 100 MB 
 aber weniger als das Limit von 200 MB.
+
+Den Befehl 'stress' verwenden wir um auf einfache Weise unterschiedliche Verhaltensweisen
+von Anwendungen zu simulieren. 
