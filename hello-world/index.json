@@ -6,11 +6,11 @@
 	"details": {
 		"steps": [
 			{
-				"title": "Schritt 1 - Kubernetes starten",
+				"title": "Kubernetes starten",
 				"text": "step1.md"
 			},
 			{
-				"title": "Schritt 2 - Busybox Pod deployen",
+				"title": "Pod deployen",
 				"text": "step2.md"
 			}
 		],
@@ -28,7 +28,7 @@
         }
 	},
 	"environment": {
-		"uilayout": "terminal-editor",
+		"uilayout": "terminal",
 		"uimessage1": "\u001b[32mDein interaktiver Bash Terminal.\r\nIn der Anleitung links kannst du direkt auf den Kommandos klicken.\r\nSie werden in diesem Terminal dann direkt ausgeführt.\u001b[m"
 	},
 	"backend": {
