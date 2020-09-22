@@ -25,7 +25,7 @@
 	},
 	"environment": {
 		"uilayout": "terminal",
-		"uimessage1": "\u001b[32mDein interaktiver Bash Terminal.\r\nIn der Anleitung (siehe links) kannst du direkt auf den Kommandos klicken und sie werden in diesem Terminal ausgeführt.\u001b[m\r\n"
+		"uimessage1": "\u001b[32mDein interaktiver Bash Terminal.\r\nIn der Anleitung (siehe links) kannst du direkt auf den Kommandos klicken.\r\nSie werden in diesem Terminal direkt ausgeführt.\u001b[m"
 	},
 	"backend": {
 		"imageid": "minikube"
