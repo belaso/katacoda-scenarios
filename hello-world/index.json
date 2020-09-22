@@ -1,6 +1,6 @@
 {
-	"title": "RAM Speicher für deine Pods ...",
-	"description": "Diese Lektion zeigt dir, wie du RAM Speicher einem Container zuweisen kannst.",
+	"title": "Memory für deine Pods",
+	"description": "Diese Lektion zeigt dir, wie du RAM Speicher einem Pod/Container in Kubernetes zuweisen kannst.",
 	"difficulty": "Beginner",
 	"time": "10 Minuten",
 	"details": {
@@ -8,6 +8,10 @@
 			{
 				"title": "Schritt 1 - Kubernetes starten",
 				"text": "step1.md"
+			},
+			{
+				"title": "Schritt 2 - Busybox Pod deployen",
+				"text": "step2.md"
 			}
 		],
 		"intro": {
@@ -25,7 +29,7 @@
 	},
 	"environment": {
 		"uilayout": "terminal",
-		"uimessage1": "\u001b[32mDein interaktiver Bash Terminal.\r\nIn der Anleitung (siehe links) kannst du direkt auf den Kommandos klicken.\r\nSie werden in diesem Terminal direkt ausgeführt.\u001b[m"
+		"uimessage1": "\u001b[32mDein interaktiver Bash Terminal.\r\nIn der Anleitung links kannst du direkt auf den Kommandos klicken.\r\nSie werden in diesem Terminal dann direkt ausgeführt.\u001b[m"
 	},
 	"backend": {
 		"imageid": "minikube"
