@@ -2,13 +2,13 @@ Schaue dir die Definition des Pods mit `cat memory-demo-pod.yaml | yq r -C -`{{e
 Diesen Pod werden wir gleich in dem vorhin erzeugten Cluster deployen.
 
 Die RAM Speicher Anforderungen sind dem Abschnitt
-```
+<pre>
 	resources:
       limits:
         memory: "200Mi"
       requests:
         memory: "100Mi"
-```
+</pre>
 definiert.
 
 Die obigen Einträge bedeuten:
