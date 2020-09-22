@@ -10,5 +10,5 @@ liefert dieser Befehl:
 host: Running
 kubelet: Running
 apiserver: Running
-kubeconfig: Running
+kubeconfig: Configured
 ```

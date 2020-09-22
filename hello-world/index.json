@@ -19,13 +19,13 @@
 		},
 		"assets":{
             "host01": [
-                {"file": "pod.yaml", "target": "~", "chmod": "-w"}
+                {"file": "*", "target": "~", "chmod": "-w"}
             ]
         }
 	},
 	"environment": {
 		"uilayout": "terminal",
-		"uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
+		"uimessage1": "\u001b[32mDein interaktiver Bash Terminal.\r\nIn der Anleitung (siehe links) kannst du direkt auf den Kommandos klicken und sie werden in diesem Terminal ausgeführt.\u001b[m\r\n"
 	},
 	"backend": {
 		"imageid": "minikube"
