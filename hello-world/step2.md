@@ -19,3 +19,7 @@ Deploye  den Pod nun mit dem Befehl `kubectl apply -f memory-demo-pod`{{execute}
 
 Mit `kubectl get pod memory-demo-pod`{{execute}} kannst du überprüfen, ob dein Pod
 läuft. Der `STATUS` des Pods ist dann `Running`.
+
+Innerhalb des Pods wurde der Docker Container https://hub.docker.com/r/polinux/stress 
+gestartet. Beim Starten des Containers wird der `stress` Befehl ausgeführt, 
+der 150MB Speicher anfordert.
