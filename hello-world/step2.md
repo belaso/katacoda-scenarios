@@ -1,5 +1,5 @@
-Schaue dir `cat memory-demo-pod.yaml`{{execute}} an. Diesen Pod werden wir gleich in dem
-neu erzeugten Cluster deployen.
+Schaue dir die Definition des Pods mit `cat memory-demo-pod.yaml | yq r -C -`{{execute}} an.
+Diesen Pod werden wir gleich in dem vorhin erzeugten Cluster deployen.
 
 Die RAM Speicher Anforderungen sind dem Abschnitt
 ```
@@ -17,5 +17,5 @@ Die obigen Einträge bedeuten:
 
 Deploye  den Pod nun mit dem Befehl `kubectl apply -f memory-demo-pod`{{execute}}.
 
-Mit `kubectl get pod memory-demo-pod` kannst du überprüfen, ob dein Pod
+Mit `kubectl get pod memory-demo-pod`{{execute}} kannst du überprüfen, ob dein Pod
 läuft. Der `STATUS` des Pods ist dann `Running`.
