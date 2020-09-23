@@ -4,6 +4,7 @@ der Docker Container innerhalb des Pods maximal (200 MB) und regulär (100 MB) e
 Die Definition des Pods findest du hier `cat memory-demo-pod.yaml | yq r -C -`{{execute}}.
 
 Die RAM Speicher Anforderungen sind dem Abschnitt
+
 <pre class="yaml">
 	resources:
       limits:
@@ -11,6 +12,7 @@ Die RAM Speicher Anforderungen sind dem Abschnitt
       requests:
         memory: "100Mi"
 </pre>
+
 definiert.
 
 Die obigen Einträge bedeuten, dass der Docker Container innerhalb des Pods
