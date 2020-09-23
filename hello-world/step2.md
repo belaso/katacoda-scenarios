@@ -1,5 +1,7 @@
-Du deployst jetzt einen einfachen Pod und gibst an wieviel RAM Speicher
-der Pod erhalten soll. Die Definition des Pods 
+Du deployst jetzt einen einfachen Kubernetes Pod und gibst an wieviel RAM Speicher
+der Docker Container des Pods erhalten soll. Der 
+
+Die Definition des Pods 
 findest du hier: `cat memory-demo-pod.yaml | yq r -C -`{{execute}}.
 
 Die RAM Speicher Anforderungen sind dem Abschnitt
