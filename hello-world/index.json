@@ -44,6 +44,6 @@
 		"uimessage1": "\u001b[32mInteraktiver Bash Terminal.\r\nIn der Anleitung links kannst du direkt auf den Kommandos klicken.\r\nSie werden in diesem Terminal dann direkt ausgeführt.\u001b[m"
 	},
 	"backend": {
-		"imageid": "trutz-k8stutorial"
+		"imageid": "minikube"
 	}
 }
