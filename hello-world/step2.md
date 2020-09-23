@@ -1,5 +1,6 @@
-Schaue dir die Definition des Pods mit `cat memory-demo-pod.yaml | yq r -C -`{{execute}} an.
-Diesen Pod werden wir gleich in dem vorhin erzeugten Cluster deployen.
+Du deployst jetzt einen einfachen Pod und gibst an wieviel RAM Speicher
+der Pod erhalten soll. Die Definition des Pods 
+findest du hier: `cat memory-demo-pod.yaml | yq r -C -`{{execute}}.
 
 Die RAM Speicher Anforderungen sind dem Abschnitt
 <pre>
@@ -11,9 +12,9 @@ Die RAM Speicher Anforderungen sind dem Abschnitt
 </pre>
 definiert.
 
-Die obigen Einträge bedeuten:
-- maximal 200 MB RAM darf der Container anfordern und
-- 100 MB RAM ist für den normalen Betrieb notwendig
+Die obigen Einträge bedeuten, dass der Docker Container innerhalb des Pods
+- maximal 200 MB RAM erhalten darf und
+- 100 MB RAM für den normalen Betrieb erhält
 
 Deploye  den Pod nun mit dem Befehl `kubectl apply -f memory-demo-pod.yaml`{{execute}}.
 
