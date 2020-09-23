@@ -4,7 +4,7 @@ der Docker Container innerhalb des Pods maximal (200 MB) und regulär (100 MB) e
 Die Definition des Pods findest du hier `cat memory-demo-pod.yaml | yq r -C -`{{execute}}.
 
 Die RAM Speicher Anforderungen sind dem Abschnitt
-<pre>
+<pre source="yaml">
 	resources:
       limits:
         memory: "200Mi"
@@ -15,8 +15,7 @@ definiert.
 
 Die obigen Einträge bedeuten, dass der Docker Container innerhalb des Pods
 - maximal 200 MB RAM erhalten darf und
-- 100 MB RAM für den normalen Betrieb erhält
-Der Container kann also zwischen 100 MB und maximal 200 MB _atmen_.
+- 100 MB RAM für den regulären Betrieb notwendig sind
 
 ## Stress
 
@@ -38,3 +37,18 @@ läuft. Der `STATUS` des Pods ist dann `Running`.
 
 Bei der Definition einer Containers innerhalb eines Pods kannst du also den regulären
 und den maximalen Speicherbedarf angeben.
+
+Würde der Container im obigen Beispiel anstelle von 150 MB lediglich 50 MB anfordern, so
+würde der Container lediglich die 50 MB erhalten und nicht die in 
+
+<pre source="yaml">
+	resources:
+      requests:
+        memory: "100Mi"
+</pre>
+
+angegebenen 100 MB. Die obige Angabe des `requests` Speichers hilft aber Kubernetes die Pods auf
+die unterschiedlichen Nodes zu verteilen. Siehe dazu auch https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
+
+Fordert ein Container mehr RAM Speicher als das maximale Limit, so wird der Container mit einem Out of Memory Fehler beendet.
+Dies wird im nächsten Abschnitt untersucht.
