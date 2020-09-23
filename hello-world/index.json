@@ -20,10 +20,6 @@
 			{
 				"title": "Out of Memory",
 				"text": "step4.md"
-			},
-			{
-				"title": "Mehrere Container in einem Pod",
-				"text": "step5.md"
 			}
 		],
 		"intro": {

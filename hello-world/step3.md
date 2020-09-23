@@ -35,3 +35,8 @@ memory-demo-pod   memory-demo-container   57m          150Mi
 
 Erwartungsgemäß verbraucht der `memory-demo-container` Container 150 MB und das liegt unterhalb des 
 eingegebenen Limits von 200 MB.
+
+## Fazit
+
+Fordert ein Container mehr RAM Speicher als das maximale Limit, so wird der Container mit einem Out of Memory Fehler beendet.
+Dies wird im nächsten Abschnitt untersucht.

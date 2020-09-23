@@ -51,6 +51,3 @@ würde der Container lediglich die 50 MB erhalten und nicht die in
 
 angegebenen 100 MB. Die obige Angabe des `requests` Speichers hilft aber Kubernetes die Pods auf
 die unterschiedlichen Nodes zu verteilen. Siehe dazu auch https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
-
-Fordert ein Container mehr RAM Speicher als das maximale Limit, so wird der Container mit einem Out of Memory Fehler beendet.
-Dies wird im nächsten Abschnitt untersucht.
