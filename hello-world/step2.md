@@ -1,5 +1,5 @@
-Du deployst jetzt einen einfachen Kubernetes Pod und gibst an wieviel RAM Speicher
-der Docker Container des Pods erhalten soll. Der 
+Du deployst jetzt einen einfachen Pod und gibst an wieviel RAM Speicher
+der Docker Container innerhalb Pods maximal (200 MB) und regulär (100 MB) erhalten soll.
 
 Die Definition des Pods 
 findest du hier: `cat memory-demo-pod.yaml | yq r -C -`{{execute}}.
@@ -18,7 +18,9 @@ Die obigen Einträge bedeuten, dass der Docker Container innerhalb des Pods
 - maximal 200 MB RAM erhalten darf und
 - 100 MB RAM für den normalen Betrieb erhält
 
-Deploye  den Pod nun mit dem Befehl `kubectl apply -f memory-demo-pod.yaml`{{execute}}.
+## Pod Deployment
+
+Deploye den Pod nun mit dem Befehl `kubectl apply -f memory-demo-pod.yaml`{{execute}}.
 
 Mit `kubectl get pod memory-demo-pod`{{execute}} kannst du überprüfen, ob dein Pod
 läuft. Der `STATUS` des Pods ist dann `Running`.
