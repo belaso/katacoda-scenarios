@@ -1,4 +1,4 @@
-Was passiert, wenn ein Container über das Limit Speicher anfordert? Wir simulieren
+Was passiert, wenn ein Container über das maximale Limit Speicher anfordert? Wir simulieren
 dies mit einem weiteren Pod `cat memory-demo-pod-2.yaml | yq r -C -`{{execute}}.
 
 Der `stress` Befehl fordert weiterhin 150 MB RAM Speicher,
