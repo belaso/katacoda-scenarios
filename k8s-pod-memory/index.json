@@ -1,6 +1,6 @@
 {
-	"title": "Memory für deine Pods",
-	"description": "Diese Lektion zeigt dir, wie du RAM Speicher einem Pod/Container in Kubernetes zuweisen kannst.",
+	"title": "RAM Speicher für Pods",
+	"description": "Dieser Abschnitt zeigt dir, wie du RAM Speicher einem Pod/Container in Kubernetes zuweisen kannst.",
 	"difficulty": "Beginner",
 	"time": "10 Minuten",
 	"details": {
@@ -22,13 +22,6 @@
 				"text": "step4.md"
 			}
 		],
-		"intro": {
-			"text": "intro.md",
-			"credits": ""
-		},
-		"finish": {
-			"text": "finish.md"
-		},
 		"assets":{
             "host01": [
                 {"file": "*", "target": "~", "chmod": "-w"}
@@ -37,6 +30,8 @@
 	},
 	"environment": {
 		"uilayout": "terminal",
+		"hideintro": true,
+		"hidefinish": true,
 		"uimessage1": "\u001b[32mInteraktiver Bash Terminal.\r\nIn der Anleitung links kannst du direkt auf Kommandos klicken.\r\nSie werden dann in diesem Terminal direkt ausgeführt.\u001b[m"
 	},
 	"backend": {

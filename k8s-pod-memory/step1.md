@@ -8,5 +8,5 @@ Wenn er erfolgreich hochgefahren ist, erhältst du folgende Ausgabe:
 host: Running
 kubelet: Running
 apiserver: Running
-kubeconfig: Configured
+kubectl: Correctly Configured: pointing to minikube-vm at X.X.X.X
 ```

@@ -5,13 +5,13 @@ Die Definition des Pods findest du hier `cat memory-demo-pod.yaml | yq r -C -`{{
 
 Die RAM Speicher Anforderungen sind dem Abschnitt
 
-<pre><code class="yaml">
+```
 resources:
   limits:
     memory: "200Mi"
   requests:
     memory: "100Mi"
-</code></pre>
+```
 
 definiert.
 
@@ -43,28 +43,11 @@ und den maximalen Speicherbedarf angeben.
 Würde der Container im obigen Beispiel anstelle von 150 MB lediglich 50 MB anfordern, so
 würde der Container lediglich die 50 MB erhalten und nicht die in 
 
-<pre><code class="yaml">
+```
 resources:
   requests:
     memory: "100Mi"
-</code></pre>
-
-<pre><code class="java">
-@WebServlet(value = "myservlet")
-@PerformanceLogger
-public class MyServlet extends HttpServlet {
-
-	private static final long serialVersionUID = 5114173476201207918L;
-
-	@Override
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		PrintWriter writer = resp.getWriter();
-		writer.append(new Test().name() + System.currentTimeMillis());
-		writer.flush();
-	}
-
-}
-</code></pre>
+```
 
 angegebenen 100 MB. Die obige Angabe des `requests` Speichers hilft aber Kubernetes die Pods auf
 die unterschiedlichen Nodes zu verteilen. Siehe dazu auch https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
