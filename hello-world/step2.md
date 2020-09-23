@@ -6,11 +6,11 @@ Die Definition des Pods findest du hier `cat memory-demo-pod.yaml | yq r -C -`{{
 Die RAM Speicher Anforderungen sind dem Abschnitt
 
 <pre class="yaml">
-	resources:
-      limits:
-        memory: "200Mi"
-      requests:
-        memory: "100Mi"
+resources:
+  limits:
+    memory: "200Mi"
+  requests:
+    memory: "100Mi"
 </pre>
 
 definiert.
@@ -44,9 +44,9 @@ Würde der Container im obigen Beispiel anstelle von 150 MB lediglich 50 MB anfo
 würde der Container lediglich die 50 MB erhalten und nicht die in 
 
 <pre class="yaml">
-	resources:
-      requests:
-        memory: "100Mi"
+resources:
+  requests:
+    memory: "100Mi"
 </pre>
 
 angegebenen 100 MB. Die obige Angabe des `requests` Speichers hilft aber Kubernetes die Pods auf
