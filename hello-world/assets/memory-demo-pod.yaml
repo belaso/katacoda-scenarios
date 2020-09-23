@@ -12,4 +12,4 @@ spec:
       requests:
         memory: "100Mi"
     command: ["stress"]
-    args: ["--vm", "1", "--vm-bytes", "150M", "--vm-hang", "1"]
+    args: ["--vm", "1", "--vm-bytes", "50M", "--vm-hang", "1"]
