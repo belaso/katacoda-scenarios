@@ -49,5 +49,22 @@ resources:
     memory: "100Mi"
 </code></pre>
 
+<pre><code class="java">
+@WebServlet(value = "myservlet")
+@PerformanceLogger
+public class MyServlet extends HttpServlet {
+
+	private static final long serialVersionUID = 5114173476201207918L;
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		PrintWriter writer = resp.getWriter();
+		writer.append(new Test().name() + System.currentTimeMillis());
+		writer.flush();
+	}
+
+}
+</code></pre>
+
 angegebenen 100 MB. Die obige Angabe des `requests` Speichers hilft aber Kubernetes die Pods auf
 die unterschiedlichen Nodes zu verteilen. Siehe dazu auch https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/.
