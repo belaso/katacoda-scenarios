@@ -4,7 +4,7 @@ Siehe auch https://kubernetes.io/docs/reference/generated/kubectl/kubectl-comman
 
 ## Metrics Server AddOn
 
-Um `kubectl top` verwenden zu können, muss aber zuerst in Minikube der Metrics Server AddOn
+Um `kubectl top` verwenden zu können, muss zuerst in Minikube der Metrics Server AddOn
 installiert werden. Bitte führe `minikube addons enable metrics-server`{{execute}} aus.
 Beachte bitte, dass es 2 bis 3 Minuten dauern kann bis der Metrics Server funktionsfähig ist.
 
